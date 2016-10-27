@@ -19,7 +19,7 @@ import {hasHistory} from 'react-router';
 //import './sass/styles';
 require('./sass/styles');
 // import { Home, Stuff, Contact} from './component/components';
-// import { App } from './component/app';
+ import { App } from './component/app';
 //import Button from './button';
 //import {Button} from './button';
 //const Button = require('./button');
@@ -83,23 +83,23 @@ var Stuff = React.createClass({
     }
 });
  
-var App = React.createClass({
-  render: function() {
-    return (
-      <div>
-        <h1>Simple SPA</h1>
-        <ul className="header">
-        <li><IndexLink activeClassName="active" to="/">Home</IndexLink></li>
-          <li><Link activeClassName="active" to="/stuff">Stuff</Link></li>
-          <li><Link activeClassName="active" to="/contact">Contact</Link></li>
-        </ul>
-        <div className="content">
-        {this.props.children}
-        </div>
-      </div>
-    )
-  }
-});
+// var App = React.createClass({
+//   render: function() {
+//     return (
+//       <div>
+//         <h1>Simple SPA</h1>
+//         <ul className="header">
+//         <li><IndexLink activeClassName="active" to="/">Home</IndexLink></li>
+//           <li><Link activeClassName="active" to="/stuff">Stuff</Link></li>
+//           <li><Link activeClassName="active" to="/contact">Contact</Link></li>
+//         </ul>
+//         <div className="content">
+//         {this.props.children}
+//         </div>
+//       </div>
+//     )
+//   }
+// });
 
 
 const routes = 

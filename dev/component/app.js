@@ -1,6 +1,6 @@
 import React from 'react';
 let ReactRouter = require('react-router');
- import { Home, Stuff, Contact} from './components';
+ //import { Home, Stuff, Contact} from './components';
 let {
   Link,
   IndexLink
