@@ -1,8 +1,6 @@
 import React from 'react';
 
-  var Home = React.createClass({
-  render: function() {
-      return (
+export default () =>
         <div>
           <h2>HELLO</h2>
           <p>Cras facilisis urna ornare ex volutpat, et
@@ -14,11 +12,9 @@ import React from 'react';
   
           <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
         </div>
-      );
-    }
-});
 
-var Contact = React.createClass({
+
+export const Contact = React.createClass({
   render: function() {
       return (
         <div>
@@ -31,7 +27,7 @@ var Contact = React.createClass({
     }
 });
  
-var Stuff = React.createClass({
+export const Stuff = React.createClass({
   render: function() {
       return (
         <div>
@@ -50,23 +46,5 @@ var Stuff = React.createClass({
     }
 });
  
-// var App = React.createClass({
-//   render: function() {
-//     return (
-//       <div>
-//         <h1>Simple SPA</h1>
-//         <ul className="header">
-//         <li><IndexLink activeClassName="active" to="/">Home</IndexLink></li>
-//           <li><Link activeClassName="active" to="/stuff">Stuff</Link></li>
-//           <li><Link activeClassName="active" to="/contact">Contact</Link></li>
-//         </ul>
-//         <div className="content">
-//         {this.props.children}
-//         </div>
-//       </div>
-//     )
-//   }
-// });
-
-export {Home, Stuff, Contact};
+//export {Home, Stuff, Contact};
 
