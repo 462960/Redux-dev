@@ -14,11 +14,11 @@ import {Link, IndexLink } from 'react-router';
  export const App = (props) =>
       <div>
         <h1>Simple SPA</h1>
-        <ul className="header">
-        <li><IndexLink activeClassName="active" to="/">Home</IndexLink></li>
-          <li><Link activeClassName="active" to="/stuff">Stuff</Link></li>
-          <li><Link activeClassName="active" to="/contact">Contact</Link></li>
-        </ul>
+        <nav className="header">
+        <IndexLink activeClassName="active" to="/">Home</IndexLink>
+          <Link activeClassName="active" to="/stuff">Stuff</Link>
+          <Link activeClassName="active" to="/contact">Contact</Link>
+        </nav>
         <div className="content">
         {props.children}
         </div>

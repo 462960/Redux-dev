@@ -1,22 +1,29 @@
 const React = require('react');
 
-let ReactRouter = require('react-router');
-const Router = ReactRouter.Router;
-let {
-	Route,
-	IndexRoute,
-	//Router,
-} = ReactRouter;
+// let ReactRouter = require('react-router');
+// const Router = ReactRouter.Router;
+// let {
+// 	Route,
+// 	IndexRoute,
+// 	//Router,
+// } = ReactRouter;
+import {Router, Route, IndexRoute} from 'react-router';
 
-import  Home, { Stuff, Contact} from '../component/components';
-import { App } from '../component/app';
+import  Home from '../common/home';
+import  About from '../common/about';
+import  Main from '../common/main';
+import  Car from '../car/car.component';
+import  CarDetail from '../car/car-detail.component';
+import data from '../car/data';
 
 export var routes = (
 <Router>
-<Route path="/" component={App} >
+<Route path="/" component={Main}>
   <IndexRoute component={Home}/>
-  <Route path="stuff" component={Stuff} />
-  <Route path="contact" component={Contact} />
+  <Route path="cars" component={Car} data={data}/>
+  <Route path="/cars/:id" component={CarDetail} data={data}/>
+
+  <Route path="about" component={About} />
 </Route>
 </Router>);
 

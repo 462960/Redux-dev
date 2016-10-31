@@ -17,28 +17,23 @@
 } */
 
  body {
-  background-color: #FFCC00;
+  background-color: #909DA2;
   padding: 20px;
   margin: 0;
-}
-h1, h2, p, ul, li {
   font-family: Helvetica, Arial, sans-serif;
 }
-ul.header li {
-  display: inline;
-  list-style-type: none;
-  margin: 0;
-}
-ul.header {
+
+.header {
   background-color: #111;
   padding: 0;
 }
-ul.header li a {
+.header a {
   color: #FFF;
   font-weight: bold;
   text-decoration: none;
   padding: 20px;
   display: inline-block;
+  margin: 0;
 }
 .content {
   background-color: #FFF;
@@ -52,5 +47,5 @@ ul.header li a {
   margin-bottom: 10px;
 }
 .active {
-  background-color: #0099FF;
+  background-color: #0099FF !important;
 }

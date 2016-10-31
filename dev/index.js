@@ -4,6 +4,8 @@
 // React Router tutorial taken here
 // https://www.kirupa.com/react/creating_single_page_app_react_using_react_router.htm
 
+//RRtraining take here https://scotch.io/tutorials/routing-react-apps-the-complete-guide
+
 
 import React from 'react';
 //const React = require('react');
