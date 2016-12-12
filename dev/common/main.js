@@ -13,6 +13,8 @@ export default (props) =>
                                 <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
                                 <li><Link to="/cars" activeClassName="active">Cars</Link></li>
                                 <li><Link to="/about" activeClassName="active">About</Link></li>
+                                <li><Link to="/repos" activeClassName="active">Repos</Link></li>
+                                <li><Link to="/login" activeClassName="active">Log in</Link></li>
                             </ul>
                         </div>
                     </div>

@@ -8,6 +8,9 @@ const validate = require('webpack-validator');
 const HTMLwebpackPlugin = require('html-webpack-plugin');
 const UglyJS = require('uglify-js-plugin');
 const webpack = require('webpack');
+// https://github.com/462960/webpack-bundle-analyzer/blob/master/README.md
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+//const DedupePlugin = require('dedupe-plugin');
 
 // Doesn't work
 // const path = require('path');
@@ -83,7 +86,13 @@ const config = {
     'process.env': {
       'NODE_ENV': JSON.stringify('production')
     }
-  })
+  }),
+      // new webpack.optimize.DedupePlugin(),
+        new BundleAnalyzerPlugin({
+      //statsFilename: 'stats.json',
+      // Visualization mode
+       analyzerMode: 'static'
+     })
     ],
 
     // The resolve property is where you have to add all the file types you are using in your application
@@ -94,3 +103,6 @@ const config = {
 };
 
 module.exports = validate(config);
+
+
+

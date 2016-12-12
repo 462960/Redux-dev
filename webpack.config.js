@@ -6,6 +6,8 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const validate = require('webpack-validator');
 const HTMLwebpackPlugin = require('html-webpack-plugin');
+// https://github.com/462960/webpack-bundle-analyzer/blob/master/README.md
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 // No need to minify, takes 8sec more to compile 
 // const UglyJS = require('uglify-js-plugin');
@@ -75,6 +77,12 @@ const config = {
       template: './dev/index.template.html',
       inject: true
     }),
+     // Comment of you do not wanna se a new bundle every reload
+     // new BundleAnalyzerPlugin({
+     //  statsFilename: 'stats.json',
+      // Visualization mode
+     //   analyzerMode: 'static'
+     // })
        // No need to minify, takes 8sec more to compile
      //  new UglyJS({
      //  compress: true,

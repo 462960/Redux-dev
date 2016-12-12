@@ -49,3 +49,24 @@
 .active {
   background-color: #0099FF !important;
 }
+
+.repo-nav {
+  a {
+    display: block;
+    color: #C71818;
+    font-size: 16px;
+  }
+}
+
+.repo-name {
+  font-variant: uppercase;
+  font-size: 22px;
+  color: #18E557;
+}
+
+label {
+  display: block;
+}
+
+.one {background: #8BCC8B;}
+.two {background: #E1C1C1;}

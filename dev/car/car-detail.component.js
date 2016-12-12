@@ -15,10 +15,12 @@ import {browserHistory} from 'react-router';
         const id = this.props.params.id;
         // Filter car with ID
         const car = cars.filter(car => {
+            //return ((car.id == id) ? car : "Not found" )
             if(car.id == id) {
                 return car;
             }
-        });
+            }
+        );
 
         return (
             <div>
